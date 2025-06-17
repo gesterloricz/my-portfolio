@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Audiowide:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-primary-bg: #0a0614;
+  --color-primary: #13B0F5;
+}
+
+.bg-primary {
+  background-color: #0a0614;
+}
+
+.font-audiowide {
+  font-family: "Audiowide", cursive !important;
+  font-display: swap;
+  font-weight: 400;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary-bg);
+}
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/audiowide/v19/l7gdbjpo0cum0ckerWCtkQXPExpQBw.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Utility classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
