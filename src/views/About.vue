@@ -1,6 +1,6 @@
 <template>
     <div class="bg-primary text-white">
-       <section class="min-h-[80vh] flex flex-col justify-center px-8 lg:px-12 py-8">
+        <section class="min-h-[80vh] flex flex-col justify-center px-8 lg:px-12 py-8">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
                     <div class="flex-shrink-0" ref="imageSection">
@@ -32,6 +32,13 @@
                                 I'm excited about the journey ahead and looking forward to building more projects in the
                                 future.
                             </p>
+
+                            <p class="hero-paragraph" style="animation-delay: 0.8s">
+                                When I’m not coding, you’ll probably find me out for a walk, going on a run, or hiking
+                                somewhere peaceful. Music is a big part of my life-anything from upbeat pop to mellow indie vibes.
+                                And sometimes, I just wander around with my camera, capturing random street scenes that
+                                tell little stories of their own.
+                            </p>
                         </div>
                         <button
                             class="mt-8 bg-primary-button hover:bg-primary-button-hover text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hero-button"
@@ -55,55 +62,79 @@
             </p>
         </div>
 
-        <section class="px-8 lg:px-12 py-16">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid md:grid-cols-3 gap-6">
-
-                    <div class="col-span-full animate-on-scroll" ref="skillsGrid">
-                        <div class="grid grid-cols-6 gap-x-10 gap-y-10 justify-items-center max-w-5xl mx-auto">
-                            <img src="/html.svg" alt="HTML5"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.1s" />
-                            <img src="/css.svg" alt="CSS3"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.2s" />
-                            <img src="/js.svg" alt="JavaScript"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.3s" />
-                            <img src="/react.svg" alt="React"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.4s" />
-                            <img src="/laravel.svg" alt="Laravel"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.5s" />
-                            <img src="/mysql.svg" alt="MySQL"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.6s" />
-
-                            <img src="/tailwindcss.svg" alt="Tailwind CSS"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.7s" />
-                            <img src="/mariadb.svg" alt="MariaDB"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.8s" />
-                            <img src="/git.svg" alt="Git"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 0.9s" />
-                            <img src="/vue.svg" alt="Vue.js"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 1.0s" />
-                            <img src="/vscode.svg" alt="VS Code"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 1.1s" />
-                            <img src="/github.svg" alt="GitHub"
-                                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon"
-                                style="animation-delay: 1.2s" />
-                        </div>
-                    </div>
-
-                </div>
+       <section class="px-8 lg:px-12 py-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="col-span-full animate-on-scroll" ref="skillsGrid">
+        <div class="flex justify-center">
+          <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-10 justify-items-center max-w-5xl">
+            <div class="skill-item" style="animation-delay: 0.1s">
+              <img src="/html.svg" alt="HTML5"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">HTML5</span>
             </div>
-        </section>
+            <div class="skill-item" style="animation-delay: 0.2s">
+              <img src="/css.svg" alt="CSS3"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.3s">
+              <img src="/js.svg" alt="JavaScript"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.4s">
+              <img src="/react.svg" alt="React"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">React</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.5s">
+              <img src="/laravel.svg" alt="Laravel"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">Laravel</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.6s">
+              <img src="/mysql.svg" alt="MySQL"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">MySQL</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.7s">
+              <img src="/tailwindcss.svg" alt="Tailwind CSS"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">Tailwind CSS</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.8s">
+              <img src="/mariadb.svg" alt="MariaDB"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">MariaDB</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 0.9s">
+              <img src="/git.svg" alt="Git"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 1.0s">
+              <img src="/vue.svg" alt="Vue.js"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scalne-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">Vue.js</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 1.1s">
+              <img src="/vscode.svg" alt="VS Code"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">VS Code</span>
+            </div>
+            <div class="skill-item" style="animation-delay: 1.2s">
+              <img src="/github.svg" alt="GitHub"
+                class="w-12 h-12 lg:w-16 lg:h-16 hover:scale-110 transition-transform skill-icon mb-3" />
+              <span class="skill-name">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <section class="px-8 lg:px-12 py-16">
             <div class="max-w-7xl mx-auto">
@@ -176,13 +207,11 @@ const certificatesGrid = ref<HTMLElement | null>(null)
 
 onMounted(() => {
     setTimeout(() => {
-        // Animate profile image
         if (imageSection.value) {
             const profileContainer = imageSection.value.querySelector('.profile-container') as HTMLElement
             if (profileContainer) profileContainer.classList.add('animate-fade-in-scale')
         }
 
-        // Animate text content
         if (heroSection.value) {
             const heroTitle = heroSection.value.querySelector('.hero-title') as HTMLElement
             const heroParagraphs = heroSection.value.querySelectorAll('.hero-paragraph') as NodeListOf<HTMLElement>
@@ -286,8 +315,17 @@ onMounted(() => {
 }
 
 @keyframes glowPulse {
-    0%, 100% { transform: scale(1); opacity: 0.3; }
-    50% { transform: scale(1.1); opacity: 0.6; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.6;
+    }
 }
 
 .hero-title {
@@ -313,7 +351,6 @@ onMounted(() => {
     transform: translateX(0) !important;
 }
 
-/* Scroll animations */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(40px);

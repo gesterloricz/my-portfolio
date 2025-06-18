@@ -49,7 +49,7 @@
                             <Icon icon="material-symbols:mail-outline" class="text-2xl text-white" />
                         </div>
 
-                        <a href="mailto:mimosaver68@gmail.com"
+                        <a href=""
                             class="text-white hover:text-[#13B0F5] transition-colors duration-300 font-poppins">
                             mimosaver68@gmail.com
                         </a>
@@ -206,7 +206,6 @@ onMounted(() => {
   transform: translateX(0) !important;
 }
 
-/* Social icons bounce animation */
 .social-icon {
   opacity: 0;
   transform: scale(0.5) translateY(20px);
@@ -218,13 +217,11 @@ onMounted(() => {
   transform: scale(1) translateY(0) !important;
 }
 
-/* Enhanced hover effects for social icons */
 .social-icon:hover {
   transform: scale(1.1) translateY(-2px);
   transition: all 0.3s ease;
 }
 
-/* Form field focus animations */
 .form-field input:focus,
 .form-field textarea:focus {
   transform: scale(1.02);

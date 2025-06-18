@@ -46,6 +46,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
+
 const projectsContainer = ref<HTMLElement | null>(null)
 const projectsSubtitle = ref<HTMLElement | null>(null)
 const progressIndicators = ref<HTMLElement | null>(null)
@@ -74,7 +75,6 @@ onMounted(() => {
             }, 500)
         }
     }
-
 
     setTimeout(() => {
         typeWriter()
