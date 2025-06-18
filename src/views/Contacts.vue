@@ -104,7 +104,7 @@
 </template>
 
 <script setup lang="ts">
-import Footer from '../components/Footer.vue'
+import Footer from '../components/footer.vue'
 import { ref, onMounted } from 'vue'
 import { Icon } from '@iconify/vue'
 

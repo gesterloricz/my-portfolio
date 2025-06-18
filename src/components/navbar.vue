@@ -61,7 +61,6 @@ const navigateTo = (path: string) => {
 </script>
 
 <style scoped>
-/* Import Audiowide font directly in component */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide:wght@400&display=swap');
 
 .font-audiowide {
@@ -83,7 +82,6 @@ const navigateTo = (path: string) => {
   text-shadow: 0 0 15px rgba(19, 176, 245, 0.5);
 }
 
-/* Ensure font loads properly with fallback */
 @font-face {
   font-family: 'Audiowide';
   font-style: normal;

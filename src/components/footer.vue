@@ -57,12 +57,6 @@ const navigateTo = (path: string) => {
     router.push(path)
 }
 
-const scrollToSection = (href: string) => {
-    const section = document.querySelector(href)
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' })
-    }
-}
 </script>
 
 <style scoped>
